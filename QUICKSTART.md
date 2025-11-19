@@ -35,6 +35,7 @@ source ~/.bashrc
 # 训练"暗度陈仓"地图（约需数小时）
 bash train_single_map.sh adcc 0 42
 bash train_single_map.sh jdsr 0 42
+
 # 查看训练日志
 tail -f results/adcc_d_tape_seed42/train.log
 ```
