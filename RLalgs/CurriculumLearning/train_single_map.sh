@@ -29,6 +29,9 @@ fi
 # 进入算法目录
 cd "$(dirname "$0")"
 
+# 设置protobuf环境变量（解决版本兼容性问题）
+export PROTOCOL_BUFFERS_PYTHON_IMPLEMENTATION=python
+
 echo "=========================================="
 echo "CurriculumLearning 训练"
 echo "=========================================="

@@ -1,0 +1,160 @@
+{
+  "battle_won_mean": [
+    0.0,
+    0.0
+  ],
+  "battle_won_mean_T": [
+    200,
+    10325
+  ],
+  "dead_allies_mean": [
+    0.0,
+    0.49019607843137253
+  ],
+  "dead_allies_mean_T": [
+    200,
+    10325
+  ],
+  "dead_enemies_mean": [
+    0.0,
+    0.0392156862745098
+  ],
+  "dead_enemies_mean_T": [
+    200,
+    10325
+  ],
+  "delta_ally_mean": [
+    0.0,
+    20.01593137254902
+  ],
+  "delta_ally_mean_T": [
+    200,
+    10325
+  ],
+  "delta_deaths_mean": [
+    0.0,
+    -2.0588235294117645
+  ],
+  "delta_deaths_mean_T": [
+    200,
+    10325
+  ],
+  "delta_enemy_mean": [
+    0.0,
+    6.3001685049019605
+  ],
+  "delta_enemy_mean_T": [
+    200,
+    10325
+  ],
+  "ep_length_mean": [
+    200.0,
+    198.52941176470588
+  ],
+  "ep_length_mean_T": [
+    200,
+    10325
+  ],
+  "episode": [
+    51
+  ],
+  "episode_T": [
+    10125
+  ],
+  "epsilon": [
+    0.995,
+    0.89931875
+  ],
+  "epsilon_T": [
+    200,
+    10325
+  ],
+  "reward_mean": [
+    0.0,
+    -0.026770617559709473
+  ],
+  "reward_mean_T": [
+    200,
+    10325
+  ],
+  "reward_std": [
+    0.0,
+    0.052997257787423556
+  ],
+  "reward_std_T": [
+    200,
+    10325
+  ],
+  "test_battle_won_mean": [
+    0.0,
+    0.0
+  ],
+  "test_battle_won_mean_T": [
+    200,
+    10325
+  ],
+  "test_dead_allies_mean": [
+    0.0,
+    0.0
+  ],
+  "test_dead_allies_mean_T": [
+    200,
+    10325
+  ],
+  "test_dead_enemies_mean": [
+    0.0,
+    0.0
+  ],
+  "test_dead_enemies_mean_T": [
+    200,
+    10325
+  ],
+  "test_delta_ally_mean": [
+    0.0,
+    0.0
+  ],
+  "test_delta_ally_mean_T": [
+    200,
+    10325
+  ],
+  "test_delta_deaths_mean": [
+    0.0,
+    0.0
+  ],
+  "test_delta_deaths_mean_T": [
+    200,
+    10325
+  ],
+  "test_delta_enemy_mean": [
+    0.0,
+    0.0
+  ],
+  "test_delta_enemy_mean_T": [
+    200,
+    10325
+  ],
+  "test_ep_length_mean": [
+    200.0,
+    200.0
+  ],
+  "test_ep_length_mean_T": [
+    200,
+    10325
+  ],
+  "test_reward_mean": [
+    0.0,
+    0.0
+  ],
+  "test_reward_mean_T": [
+    200,
+    10325
+  ],
+  "test_reward_std": [
+    0.0,
+    0.0
+  ],
+  "test_reward_std_T": [
+    200,
+    10325
+  ]
+}

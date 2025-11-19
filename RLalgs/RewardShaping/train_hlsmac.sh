@@ -30,6 +30,9 @@ BATCH_SIZE_RUN=${BATCH_SIZE_RUN:-1}
 # 进入算法目录
 cd "$(dirname "$0")"
 
+# 设置protobuf环境变量（解决版本兼容性问题）
+export PROTOCOL_BUFFERS_PYTHON_IMPLEMENTATION=python
+
 # 设置SC2PATH（如果未设置）
 if [ -z "$SC2PATH" ]; then
     DEFAULT_SC2PATH="/share/project/ytz/StarCraftII"

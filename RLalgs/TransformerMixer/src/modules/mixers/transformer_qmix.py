@@ -144,15 +144,30 @@ class TransformerQMixer(nn.Module):
         """
         Args:
             agent_qs: [batch_size, seq_len, n_agents] 智能体Q值
-            states: [batch_size, seq_len, state_dim] 全局状态
+            states: [batch_size, seq_len, state_dim] 或 [batch_size, seq_len, n_agents, state_dim] (dropout=True)
         Returns:
             q_tot: [batch_size, seq_len, 1] 总Q值
         """
-        bs = agent_qs.size(0)
-        seq_len = agent_qs.size(1)
+        # 处理dropout情况下的states形状（与原始QMIX保持一致）
+        if dropout:
+            # 当dropout=True时，states需要扩展为 [bs, seq_len, n_agents, state_dim]
+            if len(states.shape) == 3:
+                states = states.reshape(states.shape[0], states.shape[1], 1, states.shape[2]).repeat(1, 1, self.n_agents, 1)
+        
+        # 获取实际batch size和seq_len
+        if len(states.shape) == 4:
+            # dropout模式: [bs, seq_len, n_agents, state_dim]
+            bs, seq_len, n_agents_state, state_dim = states.shape
+            # 取第一个智能体的状态用于编码（所有智能体共享相同状态）
+            states_for_encoding = states[:, :, 0, :]  # [bs, seq_len, state_dim]
+        else:
+            # 正常模式: [bs, seq_len, state_dim]
+            bs = states.size(0)
+            seq_len = states.size(1)
+            states_for_encoding = states
         
         # 编码状态
-        states_flat = states.reshape(-1, self.state_dim)
+        states_flat = states_for_encoding.reshape(-1, self.state_dim)
         state_emb = self.state_encoder(states_flat)  # [bs*seq_len, embed_dim]
         state_emb = state_emb.view(bs, seq_len, self.embed_dim)
         
