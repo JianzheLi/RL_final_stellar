@@ -48,6 +48,8 @@ StarCraft2_HLSMAC/
 | yqgz | 欲擒故纵 | Letting the Enemy Off in Order to Catch Him | yqgz_te.SC2Map |
 
 ### 扩展地图
+| 地图ID | 中文名称 | 英文名称 | 地图文件 |
+|--------|---------|---------|---------|
 | pzyy | 抛砖引玉 | Tossing Out a Brick to Attract Jade | pzyy.SC2Map | 
 | ldtj | 李代桃僵 | Sacrifice the Plum Tree to Preserve the Peach Tree | ldtj.SC2Map |
 ## 环境配置
